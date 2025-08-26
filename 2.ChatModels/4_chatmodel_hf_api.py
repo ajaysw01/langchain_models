@@ -3,11 +3,12 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
+model_id = "meta-llama/Llama-3.1-8B-Instruct"
 llm = HuggingFaceEndpoint(
-    repo_id="TinyLlama/TinyLlama-1.1B-Chat-v1.0", task="text-generation"
+    repo_id=model_id, task="text-generation"
 )
 
-model = ChatHuggingFace(model=llm)
+model = ChatHuggingFace(llm=llm)
 
 result = model.invoke("What is the capital of India")
 

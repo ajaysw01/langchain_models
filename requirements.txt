@@ -28,3 +28,10 @@ streamlit
 pypdf
 #web base loader
 beautifulsoup4
+pip install -q 
+langchain-ollama 
+langchain-community
+ langchain-core 
+ requests 
+ duckduckgo-search 
+ ddgs
